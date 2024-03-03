@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Madimi+One&family=Shadows+Into+Light&display=swap');
+
+*{
+  font-family: "Madimi One", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: black;
+  opacity: 0.9;
+  padding: 20px 0;
+}
+h1{
+  margin-bottom: 10px;
+  color: white;
+}
+
+
+
+.book-container {
+  background-color: rgb(17, 16, 16);
+  border-radius: 8px;
+  box-shadow: 0 0 20px crimson;
+  padding: 20px;
+  max-width: 600px;
+  min-width: 500px;
+  text-align: center;
+}
+
+.book-container img {
+  z-index: 10;
+  max-width: 300px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.book-details {
+  color: white;
+  z-index: 10;
+  max-width: 100%;
+  padding: 0 15px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+p span{
+  font : bolder;
+  font-size: large;
+}
+
+.buttons {
+  z-index: 10;
+  margin-top: 20px;
+}
+
+.buttons button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 18px;
+    border-radius: .5em;
+    border: none;
+    background-color: crimson;
+    color: #fff;  
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.buttons button::after{
+  content: "";
+    width: 0;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: 0.7s;
+    z-index: -1;
+}
+
+.buttons button:hover::after {
+  width: 100%;
+}
